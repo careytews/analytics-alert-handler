@@ -1,0 +1,5 @@
+src/github.com
+src/analytics/alert-handler
+src/analytics/vendor
+bin
+pkg

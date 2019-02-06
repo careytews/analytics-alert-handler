@@ -1,0 +1,8 @@
+FROM fedora:26
+
+RUN dnf install -y libgo
+
+COPY alert-handler /usr/local/bin/
+
+ENTRYPOINT ["/usr/local/bin/alert-handler"]
+CMD [ "/queue/alerts" ]
